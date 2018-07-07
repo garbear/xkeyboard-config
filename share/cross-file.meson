@@ -1,0 +1,16 @@
+[binaries]
+c = '/home/garrett/Documents/steamlink-sdk/toolchain/bin/armv7a-cros-linux-gnueabi-gcc'
+cpp = '/home/garrett/Documents/steamlink-sdk/toolchain/bin/armv7a-cros-linux-gnueabi-g++'
+ar = '/home/garrett/Documents/steamlink-sdk/toolchain/bin/armv7a-cros-linux-gnueabi-ar'
+strip = '/home/garrett/Documents/steamlink-sdk/toolchain/bin/armv7a-cros-linux-gnueabi-strip'
+pkgconfig = '/home/garrett/Documents/steamlink-sdk/kodi-deps/x86_64-linux-gnu-native/bin/pkg-config'
+
+[properties]
+cargs = ['--sysroot=/home/garrett/Documents/steamlink-sdk/toolchain/../rootfs -marm -mfpu=neon -mfloat-abi=hard -DEGL_API_FB -O0 -g -D_DEBUG ', '', '-isystem /home/garrett/Documents/steamlink-sdk/kodi-deps/armv7a-cros-linux-gnueabi-debug/include']
+c_link_args = ['-L/home/garrett/Documents/steamlink-sdk/kodi-deps/armv7a-cros-linux-gnueabi-debug/lib', '-L/home/garrett/Documents/steamlink-sdk/kodi-deps/armv7a-cros-linux-gnueabi-debug/lib64', '-static-libgcc -static-libstdc++ -lstdc++  ']
+
+[host_machine]
+system = ''
+cpu_family = ''
+cpu = ''
+endian = ''
